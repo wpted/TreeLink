@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" href="../static/assets/favicon.ico">
+</head>
+
+<body class="backstage_style">
+
+<div class="nav-bar-wrapper hover-collapse">
+    <div class="top-nav-bar">
+        <!--     Logo       -->
+        <div class="logo">
+            <a href="{{ url_for('main') }}">
+                <img id="tree_img" src="../static/assets/tree_icon.png" alt="LinkTree Image">
+                <span>TreeLink</span>
+            </a>
+        </div>
+        <!--        Greetings to user        -->
+        {% if 6<= time <= 12: %}
+
+        <div class="greetings">Good Morning, {{ user["username"]}}</div>
+
+        {% elif 12<= time <= 18: %}
+        <div class="greetings">Good Afternoon, {{ user["username"]}}</div>
+
+        {% else: %}
+        <div class="greetings">Good Evening, {{ user["username"]}}</div>
+
+        {% endif %}
+    </div>
+
+    <div class="side-nav-bar">
+
+        <!--     Home Links Insights Settings       -->
+        <ul>
+            <li class="side-nav-li">
+                <a href="{{ url_for('main') }}">
+
+                    <img class="icon" src="../static/assets/home_icon.png" alt="home-icon.png">
+
+                    <span class="side-bar-text">Home</span>
+                </a>
+            </li>
+
+            <li class="side-nav-li">
+                <a href="{{ url_for('edit_links') }}">
+
+                    <img class="icon" src="../static/assets/link_icon.png" alt="link-icon.png">
+
+                    <span class="side-bar-text">Links</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+{% block content %}{% endblock %}
+
+</body>
+</html>

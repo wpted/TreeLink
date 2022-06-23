@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body class="main-body">
+<div class="container">
+    <section class="user-section">
+        <!--    shows the user avatar and username-->
+        <div class="user-section-content">
+            <img class="profile_img" src="../static/assets/lisa_avatar.png" alt="Profile Pic">
+            <h3 class="user_profile">@{{ user["username"] }}</h3>
+        </div>
+    </section>
+
+    <div class="links">
+        {% for link in links %}
+        <a href={{ link.link_url }} target="_blank">
+            <button class="link-button" type="button">{{ link.link_name }}</button>
+        </a>
+        {% endfor %}
+    </div>
+    <footer id="page-footer">
+        <h3 class="footer_text">
+            <a href={{ url_for('login') }} id="treelink">
+                <img id="tree_img" src="../static/assets/tree_icon.png" alt="LinkTree Image">TreeLink
+            </a>
+        </h3>
+    </footer>
+
+</div>
+</body>
+{% endblock %}

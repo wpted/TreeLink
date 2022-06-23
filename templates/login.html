@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<body class="login-body">
+<div class="login-box">
+    <div class="welcome-avatar">
+        <img id="welcome-avatar-img" src="../static/assets/default_user_img.png" alt="Welcome Avatar">
+    </div>
+    <h2 id="login-title">Login</h2>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div class="user-box">
+            <!--            <input type="text" placeholder="User Email">-->
+            <!--            <p>{{ form.email.label }}</p>-->
+            {{ form.email() }}
+        </div>
+
+        <div class="user-box">
+            <!--            <input type="password" placeholder="Password">-->
+            {{ form.password() }}
+        </div>
+
+        <div id="login-button">
+            <!--            <button id="login-button">Login</button>-->
+            {{ form.submit() }}
+        </div>
+
+
+    </form>
+
+    <div class="prompt-register">
+        <p >Not TreeLinked Yet?<a href="{{ url_for('register_user') }}"> Sign Up</a></p>
+    </div>
+</div>
+</body>
+{% endblock %}

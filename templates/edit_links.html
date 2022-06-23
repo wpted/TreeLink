@@ -1,0 +1,41 @@
+{% extends "backstage.html" %}
+{% block content %}
+
+<div class="edit_section">
+    <h3 class="edit_title">Edit Links</h3>
+    <div class="preview_links">
+        {% for link in links %}
+        <div class="edit_link">
+            <span>{{ link.link_name }}</span>
+            <hr id="link-splitter">
+            <span><a href="{{ link.link_url }}" target="_blank">{{ link.link_url }}</a></span>
+        </div>
+        {% endfor %}
+        <button class="add_button" onclick="openForm()">
+            <img id="plus_icon" src="../static/assets/plus.png" alt="plus.png">Add Links
+        </button>
+
+<!--        <div class="add_link_popup" id="add_form">-->
+
+<!--            <form class="add-link-container" method="POST" action="">-->
+<!--                {{ form.hidden_tag() }}-->
+<!--    <h4>Add Links</h4>-->
+<!--                <div class="add_input">-->
+<!--                    {{ form.link_name }}-->
+<!--                </div>-->
+<!--                <div class="add_input">-->
+<!--                    {{ form.link_url }}-->
+<!--                </div>-->
+<!--                <div class="add_input">-->
+<!--                    {{ form.add }}-->
+<!--                </div>-->
+
+<!--            </form>-->
+<!--        </div>-->
+    </div>
+
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='add_form.js') }}"></script>
+
+{% endblock %}
+

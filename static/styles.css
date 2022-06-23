@@ -1,0 +1,375 @@
+/* Main Page Style */
+.main-body {
+    background-color: #5F7464;
+}
+
+/* ---------- Universal -------------- */
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-button, .user_profile, .footer_text {
+    color: #243D25;
+}
+
+/*------------ User Section -------------*/
+.user-section-content {
+    padding: 10px;
+}
+
+.profile_img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 2% auto 1% auto;
+    border-radius: 60%;
+    background-color: aliceblue;
+}
+
+.user_profile {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*------------ Link Section -------------*/
+.links {
+    margin: auto;
+    padding-bottom: 10rem;
+    width: 100%;
+}
+
+.link-button {
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 10px 32px;
+    height: 2.5em;
+    width: 40%;
+    border: 2px solid #5F7464;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.link-button:hover {
+    background-color: #5F7464;
+    color: white;
+    border: 2px solid #E4AEC5;
+}
+
+/*------------footer Section -------------*/
+#page-footer {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.footer_text {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+#tree_img {
+    height: 50px;
+    width: 50px;
+}
+
+/* --------- footer ----------- */
+#treelink {
+    color: #243D25;
+}
+
+/* Login Page Style */
+.login-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background: #6B4F4F
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px 40px 10px;
+    transform: translate(-50%, -50%);
+    background: #EED6C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #483434;
+}
+
+.welcome-avatar {
+    margin-top: -100px;
+    text-align: center;
+
+}
+
+#welcome-avatar-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: solid 2px #483434;
+    background: white;
+
+}
+
+#login-title {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: #483434;
+}
+
+.user-box {
+    position: relative;
+}
+
+/*.user-box p {*/
+/*    color: red;*/
+
+/*}*/
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: #483434 1px solid;
+}
+
+/*.user-box input:focus::placeholder {*/
+/*    color: transparent;*/
+/*}*/
+
+#login-button {
+    color: #483434;
+    /* change button layout afterwards */
+}
+
+.prompt-register {
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Backstage Style */
+.backstage_style {
+    background: #F4FCD9;
+}
+
+.nav-bar-wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: 0;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.top-nav-bar .logo {
+    width: 225px;
+    border-right: 1px solid black;
+    display: flex;
+    margin-left: 25px;
+
+}
+
+.top-nav-bar .logo img {
+    vertical-align: middle;
+}
+
+
+.top-nav-bar .logo span {
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+
+.top-nav-bar .greetings {
+    width: calc(100% - 250px);
+    padding-left: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+}
+
+.side-nav-bar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    top: 25%;
+}
+
+
+.side-nav-bar ul {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+
+}
+
+.side-nav-bar ul li a {
+    display: block;
+    padding: 16px 25px;
+    border-bottom: 1px solid #03374e;
+    left: 0;
+    margin: 30px 0;
+}
+
+
+.side-nav-bar .icon {
+    height: 36px;
+    width: 36px;
+    vertical-align: middle;
+
+}
+
+.side-nav-bar .side-bar-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: black;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+
+
+.side-nav-bar ul li a:hover {
+    background: #0e94d4;
+    color: #fff;
+}
+
+.hover-collapse .side-nav-bar {
+    width: 86px;
+}
+
+.hover-collapse .side-nav-bar ul li a .side-bar-text {
+    display: none;
+}
+
+
+/* Edit Links */
+
+.edit_section {
+    position: absolute;
+    width: calc(90% - 250px);
+    top: 100px;
+    left: 250px;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.edit_title {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: black;
+    vertical-align: middle;
+}
+
+.preview_links {
+    width: 100%;
+}
+
+
+.edit_link {
+    border: solid gray 2px;
+    border-radius: 5px;
+    background: white;
+    margin: 20px 10%;
+    line-height: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.edit_link span {
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    /*vertical-align: center;*/
+}
+
+#link-splitter {
+    width: 90%;
+    margin: 0 30px;
+}
+
+.add_button {
+    border: solid gray 2px;
+    border-radius: 5px;
+    background: white;
+    margin: 20px 10%;
+    line-height: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    width: 80%;
+    align-items: center;
+
+}
+
+#plus_icon {
+    width: 30px;
+    height: 30px;
+    /*margin-top: 20px;*/
+}
+
+
+.add_button:hover {
+    filter: brightness(150%);
+}
+
+
+.add_link_popup {
+    /*display: none;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width:70%;
+    height: 30%;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px black;
+    padding: 20px 5%;
+}
+.add_link_container {
+    text-align: center;
+}
+.add_input {
+    width:100%;
+    display: block;
+}
+
+
+
+
+
+

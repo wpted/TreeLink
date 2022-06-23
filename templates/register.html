@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register User</title>
+</head>
+<body>
+
+
+<div class="register-box">
+    <h2 id="register-title">Register here</h2>
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+        <div class="new-register-box">
+            {{ form.username }}
+        </div>
+        <div class="new-register-box">
+            {{ form.email }}
+        </div>
+        <div class="new-register-box">
+            {{ form.password }}
+        </div>
+        <div class="new-register-box">
+            {{ form.password_confirm }}
+        </div>
+        <div id="register_button">
+            {{ form.submit }}
+        </div>
+    </form>
+
+    <div class="prompt-login">
+        <p>Not TreeLinked Yet?<a href="{{ url_for('login') }}"> Login</a></p>
+    </div>
+</div>
+
+</body>
+</html>
